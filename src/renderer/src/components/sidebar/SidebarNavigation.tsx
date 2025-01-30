@@ -24,6 +24,8 @@ function SidebarNavigation({ sidebarItems }: SidebarLinksProps): JSX.Element {
   const [activeChild, setActiveChild] = useState<string | null>(null)
   const [activeGrandChild, setActiveGrandChild] = useState<string | null>(null)
 
+  console.log(activeSection);
+
   // Router hooks to manage navigation
   const navigate = useNavigate()
   const location = useLocation()
